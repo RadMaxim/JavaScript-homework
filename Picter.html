@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+</head>
+<body>
+   <div id="out"></div>
+   <script>
+      let number=11;
+      let str=``;
+for (let index = 1,j=0; index < number; index++,j++) 
+str+=`<img id="out${j}" src="/Users/pro_mac/Desktop/images 2/${index}.jpg">`;
+out.innerHTML = str;
+for (let index = 1, j = 0; index < number; index++, j++) {
+   let a = document.querySelector(`#out${j}`);
+   if(j%2==0)
+      a.style.cssText=`border: 2px solid red;`
+   else a.style.cssText=`border: 2px solid blue;`    
+}
+   </script>
+  <style>
+     #out>img{
+        height: 200px;
+        width: 200px;
+        margin: 5px;
+     }
+  </style>
+</body>
+</html>
